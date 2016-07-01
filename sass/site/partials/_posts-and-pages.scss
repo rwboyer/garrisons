@@ -44,7 +44,7 @@ article {
 	}
 
 	@include clearfix;
-		font-family: $sans-serif;
+		font-family: $base-font-family;
 		text-align: left;
 
 	h1, h2, h3, p {
@@ -72,7 +72,7 @@ article {
 	.type {
 		border-bottom: 1px solid;
 		display: inline-block;
-		font-family: $sans-serif;
+		font-family: $base-font-family;
 		font-size: 0.7em;
 		font-weight: 800;
 		margin-bottom: 2em;
@@ -82,7 +82,7 @@ article {
 	}
 
 	h1 {
-		font-family: $serif;
+		font-family: $heading-font-family;
 		font-size: 1.8em;
 		font-weight: 700;
 		margin-bottom: 0.5em;
@@ -97,7 +97,7 @@ article {
 	}
 
 	h2 {
-		font-family: $serif;
+		font-family: $heading-font-family;
 		font-size: 1.2em;
 		font-style: italic;
 		font-weight: 400;
@@ -120,7 +120,7 @@ article {
 	}
 
 	h3 {
-		font-family: $serif;
+		font-family: $heading-font-family;
 		font-size: 1.4em;
 		font-weight: 400;
 		line-height: 1.3em;
@@ -129,7 +129,7 @@ article {
 
 	.entry-meta {
 		color: transparentize($base-font-color, 0.6);
-		font-family: $serif;
+		font-family: $base-font-family;
 		font-size: 0.9em;
 		font-style: italic;
 		margin-bottom: 0.3em;
@@ -140,7 +140,7 @@ article {
 	}
 
 	p {
-		font-family: $sans-serif;
+		font-family: $base-font-family;
 		font-size: 1.05em;
 		line-height: 1.5em;
 		margin-bottom: 1.5em;
@@ -148,7 +148,7 @@ article {
 
 	a.more-link {
 		display: inline-block;
-		font-family: $sans-serif;
+		font-family: $base-font-family;
 		font-size: 0.8em;
 		font-weight: 700;
 		margin-left: 0.2em;
@@ -156,7 +156,7 @@ article {
 		text-transform: uppercase;
 
 		span {
-			font-family: $sans-serif;
+			font-family: $base-font-family;
 			font-size: 1.5em;
 			font-style: normal;
 			position: absolute;

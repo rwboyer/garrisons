@@ -17,7 +17,9 @@ var gulp = require( 'gulp' ),
   zip = require('gulp-zip');
 
 var config = {
-     bowerDir: './bower_components' 
+
+    bowerDir: './bower_components'
+
 }
  
  
@@ -90,7 +92,6 @@ options.sass = {
   includePaths: [
     config.bowerDir + '/bourbon/app/assets/stylesheets',
     config.bowerDir + '/neat/app/assets/stylesheets',
-    config.bowerDir + '/bitters/app/assets/stylesheets',
   ]
 };
 options.autoprefixer = {

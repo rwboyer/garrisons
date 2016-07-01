@@ -58,7 +58,7 @@
   margin: 1em;
   overflow: auto;
   padding: 0;
-  font-family: $serif;
+  font-family: $base-font-family;
 
   .bullet {
     @include flex-basis(20em);
@@ -97,7 +97,7 @@
     font-size: $icon-bullet-size / 2.5;
     margin: 0 0 ($icon-bullet-size / 6) 0;
     padding-top: $icon-bullet-size / 7;
-    font-family: $sans-serif;
+    font-family: $heading-font-family;
   }
 
   li {

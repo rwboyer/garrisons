@@ -32,10 +32,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Bourbon Settings
 --------------------------------------------------------------*/
 @import "bourbon"; 
-@import "grid-settings";
+@import "base/grid-settings";
 @import "variables/breakpoints";
 @import "neat";
-@import "base"; 
+@import "base/base"; 
 
 /*--------------------------------------------------------------
 # Accessibility

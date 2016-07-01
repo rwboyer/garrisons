@@ -1,0 +1,36 @@
+.wrap {
+	@include outer-container;
+	@include padding(40px null 40px null);
+
+	.content-area {
+		@include span-columns(9);
+		
+		@include media($largedesktop) {
+			@include padding(null 20px);
+		}
+
+		@include media($tablet) {
+		  @include span-columns(6);
+		}
+	}
+
+	.content-home {
+		@include span-columns(12);
+
+		@include media($largedesktop) {
+			@include padding(null 20px);
+		}
+	}
+
+	.widget-area {
+		@include span-columns(3);
+
+		@include media($largedesktop) {
+			@include padding(null 20px);
+		}
+
+		@include media($tablet) {
+		  @include span-columns(6); 
+		}
+	}
+}

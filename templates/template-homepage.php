@@ -153,12 +153,12 @@ get_header('home'); ?>
     
 <div class="wrap">
   <div class="brand-statement">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="red-header"><h1>Our Brands</h1></div>
+    <p>The brands of bikes and components we carry are on the shelf for a reason. Purchases are made and products are endorsed because of experience, not profit margin. In other words, we only sell products we believe in. That’s the bottom line.</p>
   </div>
   
   <div class="brand-slider">
-    <div class="brands-slider">
-      <ul>
+    <div id="lean-slider">
         
 <?php  
 // WP_Query arguments
@@ -174,8 +174,9 @@ $query = new WP_Query( $args );
 if ( $query->have_posts() ) {
 	while ( $query->have_posts() ) {
 		$query->the_post();
+		$brand_link = (get_field('brand_link')) ? get_field('brand_link') :'#' ;
 		?>
-		<li><a href="<?php echo get_permalink( $post_id ); ?>"><?php echo get_the_post_thumbnail($post_id, 'full'); ?></a></li>
+		<div><a href="<?php echo $brand_link; ?>"><?php echo get_the_post_thumbnail($post_id, 'full'); ?></a></div>
 		<?php
 	}
 } else {
@@ -186,15 +187,14 @@ if ( $query->have_posts() ) {
 wp_reset_postdata();
 ?>
 
-      </ul>
     </div>
   </div>
     
 </div>
 
 <script>
-  $(document).ready(function() {
-      $('#slider').leanSlider();
+  jQuery(document).ready(function() {
+      jQuery('#lean-slider').leanSlider();
   });
 </script>
 

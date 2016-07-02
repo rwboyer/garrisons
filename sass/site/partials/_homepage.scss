@@ -129,9 +129,51 @@
 .wrap{
   .brand-statement{
     @include span-columns(5);
+    h1{
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0;
+      color: white;
+      font-size: modular-scale(2);
+    }
+    p{
+      text-align: justify;
+    }
+    .red-header{ 
+        width: 220px;
+        height: 80px;
+        background: red;
+        position: relative;
+        border-radius: 10px 0 0 10px;
+        margin: auto;
+        margin-bottom: 2rem;
+    
+    } 
+    .red-header:before{ 
+        content:"";
+        position: absolute;
+        left: 100%;
+        width: 0;
+        height: 0; 
+        border-top: 40px solid transparent;
+        border-left: 26px solid red; 
+        border-bottom: 40px solid transparent;
+    }
   }
   .brand-slider{
     @include span-columns(7);
+    img{
+      display: block;
+      max-width: 80%;
+      height: auto;
+      margin: auto;
+    }
+    .lean-slider{
+      padding-top: 3rem;
+      margin: auto;
+      width: 60%;
+    }
   }
 }
 

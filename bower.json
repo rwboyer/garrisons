@@ -15,6 +15,7 @@
   "devDependencies": {
     "bitters": "~1.0.0",
     "bourbon": "~4.2.4",
-    "neat": "~1.7.2"
+    "neat": "~1.7.2",
+    "unslider": "~2.0.3"
   }
 }

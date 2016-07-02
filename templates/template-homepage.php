@@ -130,8 +130,10 @@ get_header('home'); ?>
     $query = new WP_Query( $args );
     
     // The Loop
+    
+    $count = 0;
     if ( $query->have_posts() ) {
-    	while ( $query->have_posts() ) {
+    	while ( $query->have_posts() && $count++ < 5) {
     		$query->the_post();
     ?>
       	<header class="entry-header">
@@ -144,8 +146,64 @@ get_header('home'); ?>
         
     // Restore original Post Data
     wp_reset_postdata();
-    ?>  
+    ?>
+    
   </div>
 </div>
+    
+<div class="wrap">
+  <div class="brand-statement">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  
+  <div class="brand-slider">
+    <div class="brands-slider">
+      <ul>
+        
+<?php  
+// WP_Query arguments
+$args = array (
+	'post_type'              => array( 'post_type_brand' ),
+	'post_status'            => array( 'publish' ),
+);
+
+// The Query
+$query = new WP_Query( $args );
+
+// The Loop
+if ( $query->have_posts() ) {
+	while ( $query->have_posts() ) {
+		$query->the_post();
+		?>
+		<li><a href="<?php echo get_permalink( $post_id ); ?>"><?php echo get_the_post_thumbnail($post_id, 'full'); ?></a></li>
+		<?php
+	}
+} else {
+	// no posts found
+}
+
+// Restore original Post Data
+wp_reset_postdata();
+?>
+
+      </ul>
+    </div>
+  </div>
+    
+</div>
+
+<script>
+  $(document).ready(function() {
+      $('#slider').leanSlider();
+  });
+</script>
+
+<!--
+<script>
+	jQuery(document).ready(function($) {
+		$('.brands-slider').unslider();
+	});
+</script>
+-->
 
 <?php get_footer(); ?>

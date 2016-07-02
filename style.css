@@ -1493,7 +1493,27 @@ h2 {
     #news h1 a:hover {
       color: #005829; }
 
-/* line 129, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_homepage.scss */
+/* line 130, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_homepage.scss */
+.wrap .brand-statement {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%; }
+  /* line 89, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
+  .wrap .brand-statement:last-child {
+    margin-right: 0; }
+
+/* line 133, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_homepage.scss */
+.wrap .brand-slider {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%; }
+  /* line 89, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
+  .wrap .brand-slider:last-child {
+    margin-right: 0; }
+
+/* line 138, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_homepage.scss */
 .bullets {
   display: -webkit-box;
   display: -moz-box;
@@ -1513,7 +1533,7 @@ h2 {
   overflow: auto;
   padding: 0;
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
-  /* line 139, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_homepage.scss */
+  /* line 148, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_homepage.scss */
   .bullets .bullet {
     -webkit-flex-basis: 20em;
     flex-basis: 20em;
@@ -1523,7 +1543,7 @@ h2 {
     -webkit-box-flex: 1;
             flex-grow: 1;
     -ms-flex-positive: 1; }
-  /* line 144, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_homepage.scss */
+  /* line 153, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_homepage.scss */
   .bullets .bullet-icon {
     background: #477dca;
     border-radius: 50%;
@@ -1531,20 +1551,20 @@ h2 {
     height: 3.5em;
     padding: 0.875em;
     width: 3.5em; }
-  /* line 153, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_homepage.scss */
+  /* line 162, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_homepage.scss */
   .bullets .bullet-icon-1 {
     background: #477dca; }
-  /* line 157, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_homepage.scss */
+  /* line 166, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_homepage.scss */
   .bullets .bullet-icon-2 {
     background: #47caaa; }
-  /* line 161, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_homepage.scss */
+  /* line 170, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_homepage.scss */
   .bullets .bullet-icon-3 {
     background: #a9ca47; }
-  /* line 165, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_homepage.scss */
+  /* line 174, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_homepage.scss */
   .bullets .bullet-content {
     margin-left: 4.9em;
     margin-bottom: 2em; }
-  /* line 170, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_homepage.scss */
+  /* line 179, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_homepage.scss */
   .bullets h2 {
     border-bottom: 1px solid rgba(51, 51, 51, 0.2);
     display: inline-block;
@@ -1552,14 +1572,14 @@ h2 {
     margin: 0 0 0.58333em 0;
     padding-top: 0.5em;
     font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
-  /* line 179, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_homepage.scss */
+  /* line 188, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_homepage.scss */
   .bullets li {
     list-style: none; }
-  /* line 183, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_homepage.scss */
+  /* line 192, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_homepage.scss */
   .bullets p {
     color: #333;
     line-height: 1.5; }
-  /* line 188, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_homepage.scss */
+  /* line 197, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_homepage.scss */
   .bullets img {
     max-width: 100%; }
 
@@ -1642,6 +1662,101 @@ object {
 
 /* line 44, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/media/_galleries.scss */
 .gallery-caption {
+  display: block; }
+
+/*--------------------------------------------------------------
+# Vendor
+--------------------------------------------------------------*/
+/* line 1, ./bower_components/unslider/dist/css/unslider.css */
+.unslider {
+  overflow: auto;
+  margin: 0;
+  padding: 0; }
+
+/* line 1, ./bower_components/unslider/dist/css/unslider.css */
+.unslider-wrap {
+  position: relative; }
+
+/* line 1, ./bower_components/unslider/dist/css/unslider.css */
+.unslider-wrap.unslider-carousel li {
+  float: left; }
+
+/* line 1, ./bower_components/unslider/dist/css/unslider.css */
+.unslider-vertical > ul {
+  height: 100%; }
+
+/* line 1, ./bower_components/unslider/dist/css/unslider.css */
+.unslider-vertical li {
+  float: none;
+  width: 100%; }
+
+/* line 1, ./bower_components/unslider/dist/css/unslider.css */
+.unslider-fade {
+  position: relative; }
+
+/* line 1, ./bower_components/unslider/dist/css/unslider.css */
+.unslider-fade .unslider-wrap li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 8; }
+
+/* line 1, ./bower_components/unslider/dist/css/unslider.css */
+.unslider-fade .unslider-wrap li.unslider-active {
+  z-index: 10; }
+
+/* line 1, ./bower_components/unslider/dist/css/unslider.css */
+.unslider li, .unslider ol, .unslider ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: none; }
+
+/* line 1, ./bower_components/unslider/dist/css/unslider.css */
+.unslider-arrow {
+  position: absolute;
+  left: 20px;
+  z-index: 2;
+  cursor: pointer; }
+
+/* line 1, ./bower_components/unslider/dist/css/unslider.css */
+.unslider-arrow.next {
+  left: auto;
+  right: 20px; }
+
+/*
+ * Lean Slider v1.0.1
+ * http://dev7studios.com/lean-slider
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+/* line 10, ./bower_components/lean-slider/lean-slider.css */
+.lean-slider {
+  position: relative;
+  *zoom: 1; }
+
+/* line 14, ./bower_components/lean-slider/lean-slider.css */
+.lean-slider:before,
+.lean-slider:after {
+  content: " ";
+  display: table; }
+
+/* line 19, ./bower_components/lean-slider/lean-slider.css */
+.lean-slider:after {
+  clear: both; }
+
+/* line 23, ./bower_components/lean-slider/lean-slider.css */
+.lean-slider-slide {
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+  display: none; }
+
+/* line 29, ./bower_components/lean-slider/lean-slider.css */
+.lean-slider-slide.current {
   display: block; }
 
 /*# sourceMappingURL=sass */

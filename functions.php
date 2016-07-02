@@ -181,6 +181,11 @@ require get_template_directory() . '/inc/jetpack.php';
 require get_template_directory() . '/inc/plugin-activation.php';
 
 /**
+ * CPTs
+ */
+require get_template_directory() . '/inc/cpt.php';
+
+/**
  * ACF Settings
  */
 require get_template_directory() . '/inc/afc-settings.php';
@@ -189,3 +194,9 @@ require get_template_directory() . '/inc/afc-settings.php';
  * ACF Settings
  */
 require get_template_directory() . '/inc/comments-callback.php';
+
+/**
+ * Custom Fields
+ */
+require get_template_directory() . '/inc/custom-fields.php';
+

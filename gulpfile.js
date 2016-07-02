@@ -92,6 +92,8 @@ options.sass = {
   includePaths: [
     config.bowerDir + '/bourbon/app/assets/stylesheets',
     config.bowerDir + '/neat/app/assets/stylesheets',
+    config.bowerDir + '/unslider/dist/css/',
+    config.bowerDir + '/lean-slider/',
   ]
 };
 options.autoprefixer = {

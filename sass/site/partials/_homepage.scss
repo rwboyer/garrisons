@@ -126,6 +126,15 @@
   }
 }
 
+.wrap{
+  .brand-statement{
+    @include span-columns(5);
+  }
+  .brand-slider{
+    @include span-columns(7);
+  }
+}
+
 .bullets {
 
   @include display(flex);

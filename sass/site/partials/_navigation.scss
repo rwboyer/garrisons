@@ -5,7 +5,7 @@ header.navigation {
   $dark-gray: #333 !default;
   $large-screen: em(860) !default;
   $navigation-padding: 1em;
-  $navigation-background: $dark-gray;
+  $navigation-background: black;
   $navigation-color: transparentize(white, 0.3);
   $navigation-color-hover: white;
   $navigation-height: 60px;
@@ -29,7 +29,12 @@ header.navigation {
     @include clearfix;
     @include outer-container;
     position: relative;
+    text-transform: uppercase;
+    font-size: modular-scale(-1);
     z-index: 9999;
+    @include media($largedesktop-size){
+      font-size: modular-scale(0);
+    }
   }
 
   .logo {
@@ -125,7 +130,7 @@ header.navigation {
       text-decoration: none;
 
       @include media ($horizontal-bar-mode) {
-        padding-right: 1em;
+        padding-right: .3em;
       }
 
       &:focus,

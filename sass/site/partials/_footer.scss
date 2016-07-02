@@ -88,11 +88,22 @@
     font-size: 0.9em;
     line-height: 1.5em;
     margin: auto;
+    margin-bottom: 1rem;
     max-width: 35em;
     text-align: center;
+    &.footer-hours{
+      color: $footer-hours-color;
+    }
 
     a {
       color: $footer-disclaimer-color;
+    }
+  }
+  .copyright{
+    img{
+      display: block;
+      margin: auto;
+      margin-bottom: 1rem;
     }
   }
 }

@@ -23,7 +23,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 
-	<header class="navigation" role="banner">
+	<header class="navigation home" role="banner">
 	  <div class="navigation-wrapper">  
 	  			
 		<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">

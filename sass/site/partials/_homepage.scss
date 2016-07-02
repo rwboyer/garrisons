@@ -9,7 +9,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 3em;
+  padding-bottom: calc(3em + 62px);
+  margin-top: -62px;
 
   .hero-logo img {
     height: 4em;
@@ -21,6 +22,7 @@
     @include clearfix;
     margin: auto;
     padding: 3.5em;
+    padding-top: calc(3.5em + 62px);
     text-align: center;
 
     .hero-copy {
@@ -45,6 +47,80 @@
           font-size: 1.1em;
           max-width: 40%;
         }
+      }
+    }
+  }
+}
+
+.hours{
+  width: 100%;
+  background-color: $garrisons-bright-background;
+  .wrap{
+    padding-top: 0;
+  }
+  p{
+    margin: 1rem 0 1rem 0;
+    color: $color__text-light;
+    text-align: center;
+    font-weight: 700;
+  }
+}
+
+.callout{
+  width: 100%;
+  background: black;
+  padding: 2rem 2rem 2rem 2rem;
+  p{
+    font-size: modular-scale(1);
+    font-weight: 700;
+    color: $callout-color;
+    text-align: center;
+  }
+  h1{
+    color: white;
+    text-align: center;
+    font-size: modular-scale(2);
+    text-transform: uppercase;
+  }
+}
+
+#news{
+  header.entry-header{
+    display: block;
+    width: 100%;
+    background-color: $news-background-color;
+    overflow: hidden;
+    margin: 0 0 1rem 0;
+    &:after{
+      clear: both;
+      content: "";
+      display: block;
+    }
+  }
+  a.button{
+    display: block;
+    float: right;
+    background-color: $news-color;
+    color: $news-background-color;
+    transition: all linear .3s;
+    padding: 2rem 4rem 2rem 4rem;
+    font-weight: 700;
+    &:hover{
+      background-color: tint($news-color, 30%);
+    }
+  }
+  h1{
+    display: block;
+    float: left;
+    padding: 2rem 1rem 2rem 2rem;
+    margin: 0;
+    font-size: 1rem;
+    text-align: left;
+    a{
+      color: $news-color;
+      transition: all linear .3s;
+      &:hover{
+        color: shade($news-color, 30%);
       }
     }
   }

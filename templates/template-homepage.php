@@ -6,7 +6,7 @@
  * @package Hooch
  */
 
-get_header(); ?>
+get_header('home'); ?>
 
 <?php 
 	 // Gets the uploaded featured image
@@ -31,12 +31,22 @@ get_header(); ?>
 	</div>
 </div>
 
+<div class="hours">
+  <div class="wrap">
+    <div class="content-home">
+      <p>Mon: CLOSED  /  Tue: 9-6  /  Wed: 9-8  /  Thu: 9-6  /  Fri: 9-8  /  Sat: 9-5  /  Sun: 11-4</p>
+    </div>
+  </div>
+</div>
+
 <div class="wrap">
 	<div id="primary" class="content-home">
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
+				<?php get_template_part( 'template-parts/content', 'home' ); ?>
+				
 				<?php 
                     // Checks to see if the bullet color values are set
 					$color1 = (get_field('bullet_1_color') ? 'background:' . get_field('bullet_1_color') . ';' : '');
@@ -83,9 +93,6 @@ get_header(); ?>
 				  </li> 
 				</ul>
 
-
-				<?php get_template_part( 'template-parts/content', 'home' ); ?>
-
 				<?php
 					// If comments are open or we have at least one comment, load up the comment template.
 					if ( comments_open() || get_comments_number() ) :
@@ -99,5 +106,46 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 </div> <!-- .wrap -->
+
+<div class="callout">
+  <p>To schedule an appointment for bicycle repair or an experienced bike fitting</p>
+  <h1>CALL THE PROS AT (302) 384-6827</h1>
+</div>
+
+<?php echo do_shortcode('[instagram-feed showheader=false num=9 cols=3 showbutton=false showfollow=false]') ; ?>
+
+<div id="news" class="wrap">
+  <div class="content-home">
+    <h2>News & Events</h2>
+    
+    <?php
+    // WP_Query arguments
+    $args = array (
+    	'post_type'              => array( 'post' ),
+    	'post_status'            => array( 'publish' ),
+    	'nopaging'               => true,
+    );
+    
+    // The Query
+    $query = new WP_Query( $args );
+    
+    // The Loop
+    if ( $query->have_posts() ) {
+    	while ( $query->have_posts() ) {
+    		$query->the_post();
+    ?>
+      	<header class="entry-header">
+      		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
+      		<a class="button" href="<?php echo esc_url( get_permalink() );?>">Read More</a>
+      	</header><!-- .entry-header -->
+    <?php
+      }
+    } 
+        
+    // Restore original Post Data
+    wp_reset_postdata();
+    ?>  
+  </div>
+</div>
 
 <?php get_footer(); ?>

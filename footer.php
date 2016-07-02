@@ -32,9 +32,15 @@
 
 	  <hr>
 
-	  <p class="site-info">
-	  	<?php echo get_theme_mod('footer_copyright_text')  ?>		
+	  <p class="footer-hours">
+	  	Mon: CLOSED  /  Tue: 9-6  /  Wed: 9-8  /  Thu: 9-6  /  Fri: 9-8  /  Sat: 9-5  /  Sun: 11-4	
 		</p><!-- .site-info -->
+	  <p class="site-info">
+	  	(302) 384-6827  /  (302) 384-6438 (fax)  /  5801 Kennett Pike, Centreville, DE 19807	
+		</p><!-- .site-info -->
+		<div class="copyright">
+  		<a href="http://2fish.com"><img src="<?php echo get_template_directory_uri() . '/images/2fish.png' ;?>"></a>
+  		<p>Copyright 2016 Garrison's Cyclery</p>
 	</footer>
 
 

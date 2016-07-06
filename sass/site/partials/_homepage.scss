@@ -145,6 +145,10 @@
   }
 }
 
+.brand-section{
+  margin-bottom: 2rem;
+}
+
 .wrap{
   .brand-statement{
     @include span-columns(4);
@@ -283,6 +287,28 @@
   }
 }
 
+.service-section{  
+}
+
+.wrap{
+  .service-section-inner{
+    @include span-columns(10);
+    @include shift(1);
+    h1{
+      font-size: modular-scale(2);
+      color: $callout-color;
+      text-transform: none;
+    }
+  }
+}
+
+.service-brands{
+  display: flex;
+  .service-brand{
+    padding: 1rem;
+  }
+}
+
 .bullets {
 
   @include display(flex);
@@ -296,6 +322,7 @@
   .bullet {
     @include flex-basis(20em);
     @include flex-grow(1);
+    @include omega();
   }
 
   .bullet-icon {

@@ -108,7 +108,7 @@ get_header('home'); ?>
   </div>
 </div>
     
-<div class="wrap">
+<div class="wrap brand-section">
   <div class="brand-statement">
     <div class="red-header"><h1>Our Brands</h1></div>
     <p>The brands of bikes and components we carry are on the shelf for a reason. Purchases are made and products are endorsed because of experience, not profit margin. In other words, we only sell products we believe in. That’s the bottom line.</p>
@@ -192,6 +192,18 @@ if ( $query->have_posts() ) {
 wp_reset_postdata();
 ?>
     </div>
+  </div>
+</div>
+
+<div class="wrap service-section">
+  <div class="service-section-inner">
+    <h1>An authorized service center for Chris King, Rock Shox, Fox & Shimano</h1>
+    <ul class="service-brands">
+      <li class="service-brand"><img src="<?php bloginfo('template_url'); ?>/images/chris-king-logo.png"></li>
+      <li class="service-brand"><img src="<?php bloginfo('template_url'); ?>/images/rockshox-logo.gif"></li>
+      <li class="service-brand"><img src="<?php bloginfo('template_url'); ?>/images/fox-logo.jpg"></li>
+      <li class="service-brand"><img src="<?php bloginfo('template_url'); ?>/images/shimano-logo.png"></li>
+    </ul>
   </div>
 </div>
 

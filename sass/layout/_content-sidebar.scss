@@ -42,6 +42,7 @@ ul.big-blocks{
   margin: 0;
   padding: 0;
   li{
+    position: relative;
     list-style: none;
     flex-basis: 50%;
     &.page-content{
@@ -49,9 +50,34 @@ ul.big-blocks{
       background-position: center center;
       margin: 0;
       padding: 4rem;
+      &:after{
+      	content: '';
+      	position: absolute;
+      	width: inherit;
+      	height: inherit;
+      	top: 0;
+      	left: 0;
+      	bottom: 0;
+      	right: 0;
+      	background: rgba(0, 0, 0, 0.5);        
+      }
+      article{
+        position: relative;
+        z-index: 1;
+        margin-bottom: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      header{
+        text-align: center;
+      }
       h1{
         color: white;
         font-size: modular-scale(2);
+        display: inline-block;
+        border-bottom: 2px solid $accent-color;
+        padding-bottom: .5rem;
+        margin-bottom: 1.5rem;
       }
       p{
         color: white;

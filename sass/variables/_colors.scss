@@ -27,12 +27,11 @@ $base-font-color: $dark-gray !default;
 
 $callout-color: #999;
 
-  
-$footer-background: $dark-gray;
+  $footer-background: $dark-gray;
 $footer-color: white;
 $footer-link-color: transparentize($footer-color, 0.6);
 $footer-disclaimer-color: transparentize($footer-color, 0.6);
-$footer-hours-color: yellow;
+$footer-hours-color: #fff100;
 
 $garrisons-bright-background: #071689;
 $garrisons-bright-header: #ec2226;
@@ -41,3 +40,4 @@ $news-background-color: #ade7c0;
 $news-button-color: #007d3a;
 $news-color: #00b550;
 $checker-background: #f1f1f2;
+$accent-color: #fff100;

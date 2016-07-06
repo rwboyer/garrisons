@@ -207,6 +207,41 @@ wp_reset_postdata();
   </div>
 </div>
 
+<div class="testimonial-section">
+  <ul class="testimonials">
+<?php  
+// WP_Query arguments
+$args = array (
+	'post_type'              => array( 'testimonial_post_typ' ),
+	'post_status'            => array( 'publish' ),
+);
+
+// The Query
+$query = new WP_Query( $args );
+
+// The Loop
+
+$count = 0;
+
+if ( $query->have_posts() ) {
+	while ( $query->have_posts() && $count++ < 3 ) {
+		$query->the_post();
+		$testimonial = (get_field('testimonial') ? get_field('testimonial') : 'Testimonial goes here');
+		$cite = the_title('', '', false);
+		?>
+    <li class="testimonial"><blockquote><?php echo $testimonial ;?><cite><?php echo $cite ;?></cite></blockquote></li>
+		<?php
+	}
+} else {
+	// no posts found
+}
+
+// Restore original Post Data
+wp_reset_postdata();
+?>
+  </ul>
+</div>
+
 <script>
   jQuery(document).ready(function() {
       jQuery('#lean-slider').leanSlider();

@@ -309,6 +309,44 @@
   }
 }
 
+.testimonial-section{
+}
+
+.testimonials{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  .testimonial{
+    position: relative;
+    height: 17rem;
+    flex-basis: 33.333%;
+    flex-grow: 1;
+    padding: 3rem;
+    background-color: tint($garrisons-bright-background, 15%);
+    color: white;
+    &:nth-child(odd){
+      background-color: $garrisons-bright-background;
+    }
+    @media(max-width: $tablet-size){
+      flex-basis: 100%;
+    }
+    blockquote{
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0;
+      padding: 0;
+      cite{
+        margin-top: 1rem;
+        display: block;
+        &:before {
+        content: "\2014 \2009";
+        }
+      }
+    }
+  }
+}
+
 .bullets {
 
   @include display(flex);

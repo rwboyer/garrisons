@@ -41,4 +41,92 @@ if(function_exists("register_field_group"))
 	));
 }
 
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_closeouts',
+		'title' => 'Closeouts',
+		'fields' => array (
+			array (
+				'key' => 'field_577d27560a59b',
+				'label' => 'Make',
+				'name' => 'make',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_577d277d0a59c',
+				'label' => 'Model',
+				'name' => 'model',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_577d27860a59d',
+				'label' => 'Color',
+				'name' => 'color',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_577d27960a59e',
+				'label' => 'Size',
+				'name' => 'size',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_577d279e0a59f',
+				'label' => 'Closeout Price',
+				'name' => 'closeout_price',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'post_type_closeout',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+}
+
 ?>

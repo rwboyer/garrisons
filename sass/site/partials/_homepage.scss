@@ -119,7 +119,7 @@
   a.button{
     display: block;
     float: right;
-    background-color: $news-color;
+    background-color: $news-button-color;
     color: $news-background-color;
     transition: all linear .3s;
     padding: 2rem 4rem 2rem 4rem;
@@ -194,6 +194,91 @@
       padding-top: 3rem;
       margin: auto;
       width: 80%;
+    }
+  }
+}
+
+.closeouts{
+  width: 100%;
+  background-image: url('/wp-content/uploads/2016/07/garrisonsCyclery_shop_toolbox.jpg');
+  background-size: cover;
+  background-position: center center;
+  .wrap{
+    padding-top: 0;
+  }
+}
+
+.wrap{
+  .closeout-list{
+    @include span-columns(6);
+    @include shift(5);
+    @include omega();
+    position: relative;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    background-color: $news-background-color;
+    h1{
+      color: $news-color;
+      padding: 1.5rem 0 1.5rem 0;
+      margin-bottom: 2rem;
+      border-bottom: 2px solid $news-color;
+      font-size: modular-scale(2);
+      text-align: left;
+    }
+    ul{
+      color: $news-color;
+    }
+    p{
+      color: $news-color;
+      margin-bottom: 1rem;      
+    }
+    p.top-line {
+      position: relative;
+      background: inherit;
+/*
+      width: 70%;
+      max-width: 40rem;
+      min-width: 300px;
+*/
+      margin: auto;
+/*
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      color: #fff;
+*/
+      padding-right: 4rem;
+      margin-bottom: 0;
+      margin-top: 2rem;
+      font-size: modular-scale(1);
+      line-height: 1rem;
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 0;
+        line-height: 0;
+        border-bottom: 2px dotted $news-color;
+      }
+      .description {
+        position: relative;
+        background: inherit;
+        display: inline;
+        z-index: 1;
+        padding-right: .2rem;
+      }
+      .price {
+        background: inherit;
+        position: absolute;
+        min-width: 4rem;
+        bottom: 0;
+        right: 0;
+        padding-left: .2rem;
+        text-align: right;
+        z-index: 2;
+      }
+      .price:before {
+        content: '$';
+      }
     }
   }
 }

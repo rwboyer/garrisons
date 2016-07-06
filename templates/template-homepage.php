@@ -149,6 +149,52 @@ wp_reset_postdata();
     
 </div>
 
+<div class="closeouts">
+  <div class="wrap no-margin">
+    <div class="closeout-list">
+      <h1>Inventory Closeouts</h1>
+<?php  
+// WP_Query arguments
+$args = array (
+	'post_type'              => array( 'post_type_closeout' ),
+	'post_status'            => array( 'publish' ),
+);
+
+// The Query
+$query = new WP_Query( $args );
+
+// The Loop
+
+$count = 0;
+
+if ( $query->have_posts() ) {
+	while ( $query->have_posts() && $count++ < 5 ) {
+		$query->the_post();
+		$make = (get_field('make') ? get_field('make') : 'Make');
+		$model = (get_field('model') ? get_field('model') : 'Model');
+		$color = (get_field('color') ? get_field('color') : 'Color');
+		$size = (get_field('size') ? get_field('size') : 'Size');
+		$price = (get_field('closeout_price') ? get_field('closeout_price') : '0.00');
+		//the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); 
+		?>
+		<p class="top-line">
+  		<span class="description"><?php echo $make. '/' . $model ;?></span>
+  		<span class="price"><?php echo $price ;?></span>
+		</p>
+		<p><?php echo $color . '/' . $size ;?></p>
+		<?php
+	}
+} else {
+	// no posts found
+}
+
+// Restore original Post Data
+wp_reset_postdata();
+?>
+    </div>
+  </div>
+</div>
+
 <script>
   jQuery(document).ready(function() {
       jQuery('#lean-slider').leanSlider();

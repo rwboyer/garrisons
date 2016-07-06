@@ -347,6 +347,13 @@
   }
 }
 
+.map-section{
+  width: 100%;
+  .mapp-layout{
+    margin: 0;
+  }
+}
+
 .bullets {
 
   @include display(flex);

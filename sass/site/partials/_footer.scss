@@ -3,7 +3,7 @@
   background: $footer-background;
   padding: ($base-spacing * 2) $gutter;
   width: 100%;
-  @include margin(40px null null null);
+  //@include margin(40px null null null);
 
   .footer-logo {
     margin-bottom: 2em;

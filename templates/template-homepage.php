@@ -242,6 +242,10 @@ wp_reset_postdata();
   </ul>
 </div>
 
+<div class="map-section">
+  <?php echo do_shortcode('[mappress mapid="1" width="100%" height="400" adaptive="true"]'); ?>
+</div>
+
 <script>
   jQuery(document).ready(function() {
       jQuery('#lean-slider').leanSlider();

@@ -34,3 +34,107 @@
 		}
 	}
 }
+
+ul.big-blocks{
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  li{
+    list-style: none;
+    flex-basis: 50%;
+    &.page-content{
+      background-size: cover;
+      background-position: center center;
+      margin: 0;
+      padding: 4rem;
+      h1{
+        color: white;
+        font-size: modular-scale(2);
+      }
+      p{
+        color: white;
+      }     
+    }
+    &:nth-child(4n+1){
+      li.small-block{
+        &:nth-child(even){
+          background-color: $checker-background;
+        }        
+      }
+    }
+    &:nth-child(4n+2){
+      li.small-block{
+        &:nth-child(odd){
+          background-color: $checker-background;
+        }
+      }      
+    }  
+    &:nth-child(4n+3){
+      li.small-block{
+        &:nth-child(odd){
+          background-color: $checker-background;
+        }
+      }      
+    }  
+    &:nth-child(4n+4){
+      li.small-block{
+        &:nth-child(even){
+          background-color: $checker-background;
+        }
+      }      
+    }  
+    @media (max-width: 600px){
+      flex-basis: 100%;
+      &:nth-child(2n+1){
+        li.small-block{
+          &:nth-child(even){
+            background-color: $checker-background;
+          }
+          &:nth-child(odd){
+            background-color: white;
+          }        
+        }
+      }
+      &:nth-child(2n+2){
+        li.small-block{
+          &:nth-child(odd){
+            background-color: $checker-background;
+          }
+          &:nth-child(even){
+            background-color:white;
+          }
+        }      
+      }  
+    }
+  }
+  ul.small-blocks{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    li.small-block{
+      list-style: none;
+      flex-basis: 33.33%;
+      height: 33.33%;
+      margin: 0;
+      padding: 1rem;
+      img{
+        max-height: 100%;
+        max-width: 100%;
+        height: auto;
+        width: auto;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%);
+        //transform: translateX(-50%);
+        transform: translate3d(-50%, -50%, 0);
+      }
+    }
+  }
+}
+

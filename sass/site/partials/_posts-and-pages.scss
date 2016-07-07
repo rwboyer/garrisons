@@ -49,8 +49,6 @@
     }
   }
 }
-
-
 	
 article {
 	-ms-word-wrap: break-word;
@@ -257,6 +255,9 @@ h2{
         border-bottom: 2px solid $garrisons-bright-background;
       }
     }
+  }
+  button, input[type=submit]{
+    text-transform: uppercase;
   }
 }
 

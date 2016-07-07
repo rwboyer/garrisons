@@ -51,6 +51,7 @@ $query = new WP_Query( $args );
 // The Loop
 
 $count = 0;
+$bio = 0;
 
 if ( $query->have_posts() ) {
 	while ( $query->have_posts() ) {
@@ -68,7 +69,25 @@ if ( $query->have_posts() ) {
       <div class="staff">
         <h1><?php the_title('', '', true) ;?></h1>
         <h2><?php echo $staff_title; ?></h2>
-        <a href="#"><button>Read Bio</button></a>
+        <button>
+          <label for="modal-<?php echo ++$bio ;?>">
+            <div class="modal-trigger">Read Bio</div>
+          </label>
+        </button>
+      </div>
+      <div class="modal">
+        <input class="modal-state" id="modal-<?php echo $bio ;?>" type="checkbox" />
+        <div class="modal-fade-screen">
+          <div class="modal-inner">
+            <div class="modal-close" for="modal-<?php echo $bio ;?>"></div>
+            <h1><?php echo the_title('', '', false) . ' ,' . $staff_title;;?></h1>
+            <?php the_content() ;?>
+<!--
+            <p class="modal-intro">Intro text lorem ipsum dolor sit ametm, quas, eaque facilis aliquid cupiditate tempora cumque ipsum accusantium illo modi commodi  minima.</p>
+            <p class="modal-content">Body text lorem ipsum dolor ipsum dolor sit sit possimus amet, consectetur adipisicing elit. Itaque, placeat, explicabo, veniam quos aperiam molestias eriam molestias molestiae suscipit ipsum enim quasi sit possimus quod atque nobis voluptas earum odit accusamus quibusdam. Body text lorem ipsum dolor ipsum dolor sit sit possimus amet.</p>
+-->
+          </div>
+        </div>
       </div>
 		</li>
 		<?php

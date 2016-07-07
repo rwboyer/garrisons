@@ -3,3 +3,4 @@
 //= include ../bower_components/unslider/src/js/unslider.js
 //= include ../bower_components/lean-slider/lean-slider.js
 //= include ../js/src/dynamic-height.js
+//= include ../js/src/modal.js

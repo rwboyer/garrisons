@@ -693,6 +693,8 @@ ul.big-blocks {
     height: 100%; }
     /* line 145, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/layout/_content-sidebar.scss */
     ul.big-blocks ul.small-blocks li.small-block {
+      background-size: cover;
+      background-position: center center;
       list-style: none;
       -webkit-flex-basis: 33.33%;
           -ms-flex-preferred-size: 33.33%;
@@ -700,7 +702,7 @@ ul.big-blocks {
       height: 33.33%;
       margin: 0;
       padding: 1rem; }
-      /* line 151, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/layout/_content-sidebar.scss */
+      /* line 153, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/layout/_content-sidebar.scss */
       ul.big-blocks ul.small-blocks li.small-block img {
         max-height: 100%;
         max-width: 100%;
@@ -713,6 +715,25 @@ ul.big-blocks {
                 transform: translateY(-50%);
         -webkit-transform: translate3d(-50%, -50%, 0);
                 transform: translate3d(-50%, -50%, 0); }
+    /* line 166, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/layout/_content-sidebar.scss */
+    ul.big-blocks ul.small-blocks .staff {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      text-align: center; }
+      /* line 171, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/layout/_content-sidebar.scss */
+      ul.big-blocks ul.small-blocks .staff h1 {
+        color: white;
+        font-size: 1em;
+        text-transform: uppercase; }
+      /* line 176, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/layout/_content-sidebar.scss */
+      ul.big-blocks ul.small-blocks .staff h2 {
+        color: white;
+        font-size: 0.75019em; }
+      /* line 180, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/layout/_content-sidebar.scss */
+      ul.big-blocks ul.small-blocks .staff button {
+        background-color: #007d3a; }
 
 /*--------------------------------------------------------------
 # Alignments
@@ -827,7 +848,7 @@ header.navigation {
         display: none; } }
     /* line 68, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_navigation.scss */
     header.navigation .navigation-menu-button:focus, header.navigation .navigation-menu-button:hover {
-      color: white; }
+      color: #fff100; }
   /* line 76, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_navigation.scss */
   header.navigation nav {
     float: none;
@@ -885,10 +906,10 @@ header.navigation {
           padding-right: .3em; } }
       /* line 136, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_navigation.scss */
       header.navigation ul li.menu-item a:focus, header.navigation ul li.menu-item a:hover {
-        color: white; }
+        color: #fff100; }
     /* line 142, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_navigation.scss */
     header.navigation ul li.menu-item.current_page_item a {
-      color: white; }
+      color: #fff100; }
   /* line 151, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_navigation.scss */
   header.navigation li.menu-item-has-children.menu-item {
     padding-right: 0; }

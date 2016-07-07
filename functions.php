@@ -205,4 +205,10 @@ require get_template_directory() . '/inc/custom-fields.php';
  */
 require get_template_directory() . '/inc/columns.php';
 
+/**
+ * Gravity Forms Enable hidden labels
+ */
+
+add_filter( 'gform_enable_field_label_visibility_settings', '__return_true' );
+
 ?>

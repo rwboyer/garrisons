@@ -24,7 +24,7 @@ $light-gray: #ddd;
 // Font Colors
 $base-background-color: #fff;
 $base-font-color: $dark-gray;
-$action-color: $blue;
+$action-color: $garrisons-bright-header;
 
 // Border
 $base-border-color: $light-gray;
@@ -32,4 +32,4 @@ $base-border: 1px solid $base-border-color;
 
 // Forms
 $form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
-$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($news-color, $lightness: -5%, $alpha: -0.3);

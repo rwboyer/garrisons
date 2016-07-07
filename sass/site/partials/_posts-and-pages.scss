@@ -41,6 +41,16 @@
 	line-height: 1.4em;
 	margin-bottom: 1.1em;
 }
+
+.widget-area{
+  aside{
+    h1, h2, h3{
+      font-size: modular-scale(0);
+    }
+  }
+}
+
+
 	
 article {
 	-ms-word-wrap: break-word;
@@ -236,10 +246,16 @@ h2{
   }
 }
 
-.page-template-template-resources, .page-template-template-trail-maps{
+.page-template-template-resources,
+.page-template-template-trail-maps,
+.page-template-template-closeouts,
+.page-template-template-full{
   article{
     h1{
       border-bottom: 2px solid $garrisons-bright-header;
+      &.components{
+        border-bottom: 2px solid $garrisons-bright-background;
+      }
     }
   }
 }
@@ -269,6 +285,11 @@ h2{
         background-color: shade($garrisons-bright-header, 20%)
       }
     }
+    ul{
+      li{
+        line-height: 1.2;
+      }
+    }
   }
   .resource-image{
     flex-basis: 33.33%;
@@ -284,5 +305,17 @@ h2{
   }
   &:nth-child(even){
     @include omega();
+  }
+}
+
+.gform_heading{
+  display: none;
+}
+
+.wrap .gform_wrapper{
+  max-width: 100%;
+  width: 100%;
+  input.large, textarea.large{
+    width: 100% !important;
   }
 }

@@ -5,6 +5,11 @@ fieldset {
   padding: $base-spacing;
 }
 
+::placeholder{
+  color: $base-font-color;
+}
+
+
 input,
 label,
 select {
@@ -29,8 +34,8 @@ label {
 #{$all-text-inputs},
 select[multiple=multiple],
 textarea {
-  background-color: $base-background-color;
-  border: $base-border;
+  background-color: $news-background-color;
+  border: 1px solid $news-background-color;
   border-radius: $base-border-radius;
   box-shadow: $form-box-shadow;
   box-sizing: border-box;
@@ -42,11 +47,11 @@ textarea {
   width: 100%;
 
   &:hover {
-    border-color: darken($base-border-color, 10%);
+    border-color: darken($news-background-color, 10%);
   }
 
   &:focus {
-    border-color: $action-color;
+    border-color: $news-color;
     box-shadow: $form-box-shadow-focus;
     outline: none;
   }

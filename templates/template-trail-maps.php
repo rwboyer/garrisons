@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Resources
+ * Template Name: Trail Maps
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -50,7 +50,7 @@ get_header(); ?>
 <?php  
 // WP_Query arguments
 $args = array (
-	'post_type'              => array( 'post_type_resource' ),
+	'post_type'              => array( 'post_type_trail' ),
 	'post_status'            => array( 'publish' ),
 	'nopaging'               => true,
 );
@@ -60,20 +60,19 @@ $query = new WP_Query( $args );
 
 // The Loop
 
-$count = 0;
 if ( $query->have_posts() ) {
 	while ( $query->have_posts() ) {
-  	$count++;
 		$query->the_post();
     $resource_img = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
     $bg = (!empty( $resource_img ) ? "background-image: url('". $resource_img[0] ."');" : '');
-		$resource_link = (get_field('resource_link')) ? get_field('resource_link') :'#' ; ?>
+		$trail_link = (get_field('trail_link')) ? get_field('trail_link') :'#' ;
+		$trail_map = (get_field('map')) ? get_field('map') :'#' ; ?>
 		  <div class="inner-column">
   		  <ul class="resource-blocks">
   		    <li class="resource-info">
   		    <h1><?php the_title('', '', true) ;?></h1>
   		    <?php the_content('', false) ; ?>
-          <a href="<?php echo $resource_link; ?>"><button>Read More</button></a>
+          <a target="_blank" href="<?php echo $trail_map['url']; ?>"><button>Download</button></a>
   		    </li>
   		    <li class="resource-image" style="<?php echo $bg ;?>">
   		    </li>

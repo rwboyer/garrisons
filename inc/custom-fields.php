@@ -209,4 +209,80 @@ if(function_exists("register_field_group"))
 	));
 }
 
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_resources',
+		'title' => 'Resources',
+		'fields' => array (
+			array (
+				'key' => 'field_577e84042bea4',
+				'label' => 'Resource Link',
+				'name' => 'resource_link',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'post_type_resource',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+}
+
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_trail',
+		'title' => 'Trail',
+		'fields' => array (
+			array (
+				'key' => 'field_577e961012071',
+				'label' => 'Map',
+				'name' => 'map',
+				'type' => 'file',
+				'save_format' => 'object',
+				'library' => 'all',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'post_type_trail',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+}
+
 ?>

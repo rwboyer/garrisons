@@ -203,6 +203,7 @@ h2{
     font-size: modular-scale(3);
     position: relative;
     background: inherit;
+    overflow: hidden;
 /*
     width: 70%;
     max-width: 40rem;
@@ -235,7 +236,7 @@ h2{
   }
 }
 
-.page-template-template-resources{
+.page-template-template-resources, .page-template-template-trail-maps{
   article{
     h1{
       border-bottom: 2px solid $garrisons-bright-header;
@@ -243,9 +244,45 @@ h2{
   }
 }
 
+.resource-blocks{
+  display: flex;
+  align-items: stretch;
+  max-width: 80%;
+  margin-bottom: 2rem;
+  @media (max-width: $tablet-size){
+    max-width: 100%;
+  }
+  .resource-info{
+    position: relative;
+    min-height: 10rem;
+    flex-basis: 66.66%;
+    margin-right: 2rem;
+    h1{
+      text-align: left;
+      font-size: modular-scale(0);
+    }
+    button{
+      position: absolute;
+      bottom: 0;
+      background-color: $garrisons-bright-header;
+      &:hover{
+        background-color: shade($garrisons-bright-header, 20%)
+      }
+    }
+  }
+  .resource-image{
+    flex-basis: 33.33%;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
 .inner-column{
   @include span-columns(6);
-  @include media($mobile){
+  @media (max-width: $tablet-size){
     @include span-columns(12);
+  }
+  &:nth-child(even){
+    @include omega();
   }
 }

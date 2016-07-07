@@ -200,3 +200,9 @@ require get_template_directory() . '/inc/comments-callback.php';
  */
 require get_template_directory() . '/inc/custom-fields.php';
 
+/**
+ * Shortcodes
+ */
+require get_template_directory() . '/inc/columns.php';
+
+?>

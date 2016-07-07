@@ -294,6 +294,7 @@
   .service-section-inner{
     @include span-columns(10);
     @include shift(1);
+    @include omega();
     h1{
       font-size: modular-scale(2);
       color: $callout-color;

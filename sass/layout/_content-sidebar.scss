@@ -22,6 +22,12 @@
 		}
 	}
 	
+	.content-narrow{
+  	@include span-columns(10);
+  	@include shift(1);
+  	@include omega();
+	}
+	
 	.widget-area {
 		@include span-columns(3);
 
@@ -186,9 +192,9 @@ ul.big-blocks{
       }
       button{
         background-color: $news-button-color;
-        label{
-          margin-bottom: 0;
-        }
+      }
+      label{
+        margin-bottom: 0;
       }
     }
   }

@@ -69,11 +69,9 @@ if ( $query->have_posts() ) {
       <div class="staff">
         <h1><?php the_title('', '', true) ;?></h1>
         <h2><?php echo $staff_title; ?></h2>
-        <button>
-          <label for="modal-<?php echo ++$bio ;?>">
-            <div class="modal-trigger">Read Bio</div>
-          </label>
-        </button>
+        <label for="modal-<?php echo ++$bio ;?>">
+          <div class="modal-trigger"><button>Read Bio</button></div>
+        </label>
       </div>
       <div class="modal">
         <input class="modal-state" id="modal-<?php echo $bio ;?>" type="checkbox" />

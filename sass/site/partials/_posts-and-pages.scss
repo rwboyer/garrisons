@@ -301,11 +301,9 @@ h2{
 
 .inner-column{
   @include span-columns(6);
+  @include omega(2n);
   @media (max-width: $tablet-size){
     @include span-columns(12);
-  }
-  &:nth-child(even){
-    @include omega();
   }
 }
 

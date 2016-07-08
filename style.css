@@ -1614,6 +1614,12 @@ h2 {
   /* line 89, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
   .inner-column:last-child {
     margin-right: 0; }
+  /* line 78, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/bower_components/neat/app/assets/stylesheets/grid/_omega.scss */
+  .inner-column:nth-child(2n) {
+    margin-right: 0; }
+  /* line 83, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/bower_components/neat/app/assets/stylesheets/grid/_omega.scss */
+  .inner-column:nth-child(2n+1) {
+    clear: left; }
   @media (max-width: 45rem) {
     /* line 302, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_posts-and-pages.scss */
     .inner-column {
@@ -1624,19 +1630,16 @@ h2 {
       /* line 89, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
       .inner-column:last-child {
         margin-right: 0; } }
-  /* line 307, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_posts-and-pages.scss */
-  .inner-column:nth-child(even) {
-    margin-right: 0; }
 
-/* line 312, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_posts-and-pages.scss */
+/* line 310, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_posts-and-pages.scss */
 .gform_heading {
   display: none; }
 
-/* line 316, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_posts-and-pages.scss */
+/* line 314, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_posts-and-pages.scss */
 .wrap .gform_wrapper {
   max-width: 100%;
   width: 100%; }
-  /* line 319, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_posts-and-pages.scss */
+  /* line 317, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_posts-and-pages.scss */
   .wrap .gform_wrapper input.large, .wrap .gform_wrapper textarea.large {
     width: 100% !important; }
 

@@ -22,12 +22,16 @@ get_header(); ?>
   </div>
 </div>
 
-
 <div class="wrap">
   <div class="content-home">
     <article>
       <h1>Bikes</h1>
     </article>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="content-home">
   
 <?php  
 // WP_Query arguments
@@ -55,14 +59,14 @@ if ( $query->have_posts() ) {
 		  <div class="inner-column">
   		  <ul class="resource-blocks">
   		    <li class="resource-info">
-  		    <h1><?php the_title('', '', true) ;?></h1>
-  		    <ul>
-    		    <li><?php the_time( get_option( 'date_format' ) ); ?></li>
-    		    <li>Size: <?php echo($size) ; ?></li>
-    		    <li>Quantity Available: <?php echo($quantity) ; ?></li>
-    		    <li><?php echo '<strike>' . $orig_price . '</strike>' . ' / '. $close_price ;?></li>
-  		    </ul>
-          <a href="<?php echo the_permalink(); ?>"><button>More Info</button></a>
+    		    <h1><?php the_title('', '', true) ;?></h1>
+    		    <ul>
+      		    <li><?php the_time( get_option( 'date_format' ) ); ?></li>
+      		    <li>Size: <?php echo($size) ; ?></li>
+      		    <li>Quantity Available: <?php echo($quantity) ; ?></li>
+      		    <li><?php echo '<strike>' . $orig_price . '</strike>' . ' / '. $close_price ;?></li>
+    		    </ul>
+            <a href="<?php echo the_permalink(); ?>"><button>More Info</button></a>
   		    </li>
   		    <li class="resource-image" style="<?php echo $bg ;?>">
   		    </li>
@@ -86,6 +90,11 @@ wp_reset_postdata();
     <article>
       <h1 class="components">Components</h1>
     </article>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="content-home">
   
 <?php  
 // WP_Query arguments
@@ -113,14 +122,14 @@ if ( $query->have_posts() ) {
 		  <div class="inner-column">
   		  <ul class="resource-blocks">
   		    <li class="resource-info">
-  		    <h1><?php the_title('', '', true) ;?></h1>
-  		    <ul>
-    		    <li><?php the_time( get_option( 'date_format' ) ); ?></li>
-    		    <li>Size: <?php echo($size) ; ?></li>
-    		    <li>Quantity Available: <?php echo($quantity) ; ?></li>
-    		    <li><?php echo '<strike>' . $orig_price . '</strike>' . ' / '. $close_price ;?></li>
-  		    </ul>
-          <a href="<?php echo the_permalink(); ?>"><button>More Info</button></a>
+    		    <h1><?php the_title('', '', true) ;?></h1>
+    		    <ul>
+      		    <li><?php the_time( get_option( 'date_format' ) ); ?></li>
+      		    <li>Size: <?php echo($size) ; ?></li>
+      		    <li>Quantity Available: <?php echo($quantity) ; ?></li>
+      		    <li><?php echo '<strike>' . $orig_price . '</strike>' . ' / '. $close_price ;?></li>
+    		    </ul>
+            <a href="<?php echo the_permalink(); ?>"><button>More Info</button></a>
   		    </li>
   		    <li class="resource-image" style="<?php echo $bg ;?>">
   		    </li>

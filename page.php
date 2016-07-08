@@ -14,6 +14,14 @@
 
 get_header(); ?>
 
+<header class="page-header">
+  <div class="wrap">
+    <div class="content-home">
+  	<?php single_post_title( '<h1 class="entry-title">', '</h1>' ); ?>
+    </div>
+  </div>
+</header><!-- .entry-header -->
+
 <div class="wrap">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">

@@ -206,6 +206,11 @@ require get_template_directory() . '/inc/custom-fields.php';
 require get_template_directory() . '/inc/columns.php';
 
 /**
+ * Woocommerce
+ */
+require get_template_directory() . '/inc/woocommerce.php';
+
+/**
  * Gravity Forms Enable hidden labels
  */
 

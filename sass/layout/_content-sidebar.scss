@@ -78,6 +78,9 @@ ul.big-blocks{
         text-align: center;
       }
       h1{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
         color: white;
         font-size: modular-scale(2);
         display: inline-block;

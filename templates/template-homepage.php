@@ -178,7 +178,11 @@ if ( $query->have_posts() ) {
 		//the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); 
 		?>
 		<p class="top-line">
-  		<span class="description"><?php echo $make. '/' . $model ;?></span>
+    		<span class="description">
+    		  <a href="<?php the_permalink() ;?>">
+            <?php echo $make. '/' . $model ;?>
+    		  </a>
+        </span>
   		<span class="price"><?php echo $price ;?></span>
 		</p>
 		<p><?php echo $color . '/' . $size ;?></p>

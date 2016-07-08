@@ -24,6 +24,11 @@ header.navigation {
   min-height: $navigation-height;
   width: 100%;
   z-index: 999;
+  &.home{
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    position: relative;
+  }
 
   .navigation-wrapper {
     @include clearfix;

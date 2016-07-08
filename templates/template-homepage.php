@@ -248,7 +248,7 @@ wp_reset_postdata();
 
 <script>
   jQuery(document).ready(function() {
-      jQuery('#lean-slider').leanSlider();
+      jQuery('#lean-slider').leanSlider({pauseTime: 1000});
   });
 </script>
 

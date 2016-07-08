@@ -153,6 +153,7 @@
   .brand-statement{
     @include span-columns(4);
     @include shift(1);
+    height: rem(350);
     h1{
       position: relative;
       top: 50%;
@@ -184,10 +185,17 @@
         border-left: 26px solid red; 
         border-bottom: 40px solid transparent;
     }
+    @media(max-width: $tablet-size){
+      @include span-columns(10);
+      @include shift(1);
+      @include omega();
+      height: auto;
+    }
   }
   .brand-slider{
     @include span-columns(6);
     @include omega();
+    height: rem(350);
     img{
       display: block;
       max-width: 80%;
@@ -195,9 +203,17 @@
       margin: auto;
     }
     .lean-slider{
-      padding-top: 3rem;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      //padding-top: 3rem;
       margin: auto;
       width: 80%;
+    }
+    @media(max-width: $tablet-size){
+      @include span-columns(12);
+      @include shift(0);
+      @include omega();
     }
   }
 }
@@ -283,6 +299,11 @@
       .price:before {
         content: '$';
       }
+    }
+    @media(max-width: $tablet-size){
+      @include span-columns(10);
+      @include shift(1);
+      @include omega();
     }
   }
 }

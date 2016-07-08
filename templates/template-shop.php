@@ -58,6 +58,8 @@ if ( $query->have_posts() ) {
 		$query->the_post();
     $item_img = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
     $bg = (!empty( $item_img ) ? "background-image: url('". $item_img[0] ."');" : '');
+    $product = new WC_Product( get_the_ID() );
+    $price = $product->price;
     if ($count++ < 1) :?>
 		  <li class="big-block">
 		    <ul class="small-blocks">
@@ -67,7 +69,7 @@ if ( $query->have_posts() ) {
 		<li class="small-block" style="<?php echo $bg ;?>">
       <div class="staff">
         <h1><?php the_title('', '', true) ;?></h1>
-        <h2><?php echo $staff_title; ?></h2>
+        <h2><?php echo $product->get_price_html() ; ?></h2>
         <a href="<?php the_permalink() ;?>"><button>Details</button></a>
       </div>
 		</li>

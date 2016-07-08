@@ -356,3 +356,24 @@ ul.big-blocks{
   overflow: hidden;
 }
 
+.post-blocks{
+  display: flex;
+  flex-wrap: wrap;
+  .post-block{
+    flex-basis: 33.33%;
+    padding: 2rem;
+    article{
+      h1{
+        font-size: modular-scale(1);
+        padding: 0;
+        border: none;
+        margin-bottom: 1.5rem;
+        line-height: $heading-line-height;
+      }
+    }
+    &:nth-child(odd){
+      background-color: $checker-background;
+    }
+  }
+}
+

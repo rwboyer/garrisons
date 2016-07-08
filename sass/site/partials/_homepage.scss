@@ -147,13 +147,22 @@
 
 .brand-section{
   margin-bottom: 2rem;
+  height: rem(350);
+  @media (max-width: $tablet-size){
+    height: auto;
+  }
 }
 
 .wrap{
+  &.brand-section{
+    padding-top: 0;
+  }
   .brand-statement{
     @include span-columns(4);
     @include shift(1);
-    height: rem(350);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     h1{
       position: relative;
       top: 50%;
@@ -190,6 +199,10 @@
       @include shift(1);
       @include omega();
       height: auto;
+      position: static;
+      top: 0;
+      transform: translateY(0);
+      padding-top: 2rem;
     }
   }
   .brand-slider{

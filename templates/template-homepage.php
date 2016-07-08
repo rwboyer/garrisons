@@ -218,6 +218,7 @@ wp_reset_postdata();
 $args = array (
 	'post_type'              => array( 'testimonial_post_typ' ),
 	'post_status'            => array( 'publish' ),
+  'orderby'                => 'rand',
 );
 
 // The Query

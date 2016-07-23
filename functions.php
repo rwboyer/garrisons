@@ -76,6 +76,7 @@ function hooch_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+	add_filter('show_admin_bar', '__return_false');
 }
 endif; // hooch_setup
 add_action( 'after_setup_theme', 'hooch_setup' );

@@ -1070,7 +1070,6 @@ ul.big-blocks {
 /* line 1, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_navigation.scss */
 header.navigation {
   background-color: black;
-  border-bottom: 1px solid black;
   min-height: 60px;
   width: 100%;
   z-index: 999;

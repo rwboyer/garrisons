@@ -73,7 +73,12 @@ if ( $query->have_posts() ) {
   		$count = 0;
     endif;
 	}
-	if($count < 9 && $count > 0) : ?>
+	if($count < 9 && $count > 0) :
+	  for($i = 0; $i < 9 - $count; $i++){ ?>
+  	  <li class="small-block"></li>
+    <?php
+	  }
+	  ?>
       </ul>
     </li>
   <?php

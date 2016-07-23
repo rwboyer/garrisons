@@ -5,3 +5,4 @@
 //= include ../bower_components/clamp.js/clamp.js
 //= include ../js/src/dynamic-height.js
 //= include ../js/src/modal.js
+//= include ../js/src/parallax-init.js

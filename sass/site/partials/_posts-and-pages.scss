@@ -318,3 +318,15 @@ h2{
     width: 100% !important;
   }
 }
+
+.brand-footer{
+  background-color: $news-background-color;
+  p{
+    font-family: $heading-font-family-alt;
+    //font-size: modular-scale(1);
+    color: $news-color;
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+  }
+}

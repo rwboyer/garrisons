@@ -92,5 +92,7 @@ wp_reset_postdata();
 ?>
 
 </ul>
-
+<div class="brand-footer">
+  <p>We have many more brands in stock at the shop. Stop by to see hem all!</p>
+</div>
 <?php get_footer(); ?>

@@ -1701,6 +1701,17 @@ h2 {
   .wrap .gform_wrapper input.large, .wrap .gform_wrapper textarea.large {
     width: 100% !important; }
 
+/* line 322, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_posts-and-pages.scss */
+.brand-footer {
+  background-color: #ade7c0; }
+  /* line 324, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_posts-and-pages.scss */
+  .brand-footer p {
+    font-family: "museo_sans900";
+    color: #00b550;
+    padding: 1rem;
+    margin: 0;
+    text-align: center; }
+
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/

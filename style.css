@@ -734,7 +734,7 @@ ul.big-blocks {
     /* line 122, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/layout/_content-sidebar.scss */
     ul.big-blocks li:nth-child(4n+4) li.small-block:nth-child(even) {
       background-color: #f1f1f2; }
-    @media (max-width: 600px) {
+    @media (max-width: 1024px) {
       /* line 54, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/layout/_content-sidebar.scss */
       ul.big-blocks li {
         -webkit-flex-basis: 100%;

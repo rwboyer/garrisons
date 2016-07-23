@@ -90,14 +90,16 @@
   background: black;
   padding: 2rem 2rem 2rem 2rem;
   p{
+    font-family: $heading-font-family-alt;
     font-size: modular-scale(1);
-    font-weight: 700;
+    //font-weight: 700;
     color: $callout-color;
     text-align: center;
   }
   h1{
     color: white;
     text-align: center;
+    font-family: $heading-font-family-alt;
     font-size: modular-scale(2);
     text-transform: uppercase;
   }
@@ -133,6 +135,7 @@
     float: left;
     padding: 2rem 1rem 2rem 2rem;
     margin: 0;
+    font-family: $heading-font-family-alt;
     font-size: 1rem;
     text-align: left;
     a{
@@ -330,7 +333,8 @@
     @include shift(1);
     @include omega();
     h1{
-      font-size: modular-scale(2);
+      font-family: $heading-font-family-alt;
+      font-size: modular-scale(1);
       color: $callout-color;
       text-transform: none;
     }

@@ -22,7 +22,7 @@ get_header(); ?>
 ?>
 
 <ul class="big-blocks">
-  <li class="big-block page-content" style="<?php echo $bg; ?>">
+  <li class="big-block content-page" style="<?php echo $bg; ?>">
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>

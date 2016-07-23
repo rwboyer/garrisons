@@ -96,14 +96,23 @@
   .content-page{
     @include span-columns(7);
     @include shift(1);
+    @media(max-width: $tablet-size){
+      @include span-columns(10);
+      @include omega();
+    }
   }
 	.savings{
   	@include span-columns(3);
   	@include omega();
+    @media(max-width: $tablet-size){
+      @include span-columns(12);
+      @include omega();
+    }
   	h1{
-    	margin-top: 1.5rem;
+    	margin-top: 1.2rem;
     	color: $garrisons-bright-header;
-    	font-size: modular-scale(1);
+    	font-family: $heading-font-family-normal;
+    	font-size: modular-scale(2);
     	span{
       	font-size: modular-scale(2);
     	}

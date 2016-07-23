@@ -63,7 +63,7 @@ if ( $query->have_posts() ) {
 		endif  
 		?>
 		<li class="small-block">
-      <a href="<?php echo $brand_link; ?>"><?php echo get_the_post_thumbnail($post_id, 'full'); ?></a>
+      <a target="_blank" href="<?php echo $brand_link; ?>"><?php echo get_the_post_thumbnail($post_id, 'full'); ?></a>
 		</li>
 		<?php
     if($count == 9) :?>

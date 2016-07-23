@@ -9,7 +9,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: calc(3em + 62px);
+  height: 30rem;
+  //padding-bottom: calc(3em + 62px);
   margin-top: -62px;
 
   .hero-logo img {
@@ -20,9 +21,13 @@
   .hero-inner {
     @include outer-container;
     @include clearfix;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     margin: auto;
-    padding: 3.5em;
-    padding-top: calc(3.5em + 62px);
+    padding-top: 62px;
+    //padding: 3.5em;
+    //padding-top: calc(3.5em + 62px);
     text-align: center;
 
     .hero-copy {

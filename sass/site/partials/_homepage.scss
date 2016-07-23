@@ -60,13 +60,29 @@
 .hours{
   width: 100%;
   background-color: $garrisons-bright-background;
-  .wrap{
-    padding-top: 0;
+  //padding: 1rem 2rem 1rem 2rem;
+  .dummy{
+    float: left;
+    display: inline-block;
+  }
+  .banner{
+    padding: 1rem 2rem 1rem 1rem;
+  }
+  .phone{
+    float: right;
+    display: inline-block;
+    background-color: $garrisons-bright-background-offset;
+    padding: 1rem 2rem 1rem 2rem;
+    p{
+      color: $garrisons-bright-text;
+    }
   }
   p{
-    margin: 1rem 0 1rem 0;
+    //margin: 1rem 0 1rem 0;
+    margin: 0;
     color: $color__text-light;
     text-align: center;
+    font-family: $banner-font-family;
     font-weight: 700;
   }
 }

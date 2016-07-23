@@ -32,10 +32,12 @@ get_header('home'); ?>
 </div>
 
 <div class="hours">
-  <div class="wrap">
-    <div class="content-home">
-      <p>Mon: CLOSED  /  Tue: 9-6  /  Wed: 9-8  /  Thu: 9-6  /  Fri: 9-8  /  Sat: 9-5  /  Sun: 11-4</p>
-    </div>
+  <div class="dummy"></div>
+  <div class="phone">
+    <p>(302) 384-6827</p>
+  </div>
+  <div class="banner">
+    <p>Mon: CLOSED  /  Tue: 9-6  /  Wed: 9-8  /  Thu: 9-6  /  Fri: 9-8  /  Sat: 9-5  /  Sun: 11-4</p>
   </div>
 </div>
 

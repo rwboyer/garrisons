@@ -1108,3 +1108,8 @@ jQuery(function() {
   });
 });
 
+jQuery(document).ready(function( $ ) {
+  $(window).stellar();
+});
+
+

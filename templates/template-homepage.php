@@ -149,7 +149,7 @@ wp_reset_postdata();
     
 </div>
 
-<div class="closeouts">
+<div class="closeouts" data-stellar-background-ratio="0.5">
   <div class="wrap no-margin">
     <div class="closeout-list">
       <h1>Inventory Closeouts</h1>

@@ -242,8 +242,9 @@
 .closeouts{
   width: 100%;
   background-image: url('/wp-content/uploads/2016/07/garrisonsCyclery_shop_toolbox.jpg');
+  background-attachment: fixed;
   background-size: cover;
-  background-position: center center;
+  //background-position: center center;
   .wrap{
     padding-top: 0;
   }

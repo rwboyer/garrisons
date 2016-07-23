@@ -76,6 +76,11 @@
     p{
       color: $garrisons-bright-text;
     }
+    @media (max-width: $tablet-size){
+      float: none;
+      display: block;
+      margin: auto;
+    }
   }
   p{
     //margin: 1rem 0 1rem 0;

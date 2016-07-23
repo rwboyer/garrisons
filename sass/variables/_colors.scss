@@ -26,14 +26,16 @@ $light-gray: #DDD !default;
 $base-font-color: $dark-gray !default;
 
 $callout-color: #999;
+$garrisons-bright-text: #fff100;
 
 $footer-background: $dark-gray;
 $footer-color: white;
 $footer-link-color: transparentize($footer-color, 0.6);
 $footer-disclaimer-color: transparentize($footer-color, 0.6);
-$footer-hours-color: #fff100;
+$footer-hours-color: $garrisons-bright-text;
 
 $garrisons-bright-background: #071689;
+$garrisons-bright-background-offset: #133595;
 $garrisons-bright-header: #ec2226;
 
 $news-background-color: #ade7c0;

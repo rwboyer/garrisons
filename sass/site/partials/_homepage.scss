@@ -9,12 +9,24 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: 30rem;
   //padding-bottom: calc(3em + 62px);
   margin-top: -62px;
-
+  &:after{
+  	content: '';
+  	position: absolute;
+  	width: inherit;
+  	height: inherit;
+  	top: 0;
+  	left: 0;
+  	bottom: 0;
+  	right: 0;
+  	background: rgba(0, 0, 0, 0.3);        
+  }
+  
   .hero-logo img {
-    height: 4em;
+    height: 6em;
     margin-bottom: 1em;
   }
 
@@ -29,6 +41,7 @@
     //padding: 3.5em;
     //padding-top: calc(3.5em + 62px);
     text-align: center;
+    z-index: 1;
 
     .hero-copy {
       text-align: center;
@@ -218,7 +231,7 @@
         background: red;
         position: relative;
         border-radius: 10px 0 0 10px;
-        margin: auto;
+        //margin: auto;
         margin-bottom: 2rem;
     
     } 
@@ -286,7 +299,7 @@
     @include shift(5);
     @include omega();
     position: relative;
-    padding: 0 1.5rem 1.5rem 1.5rem;
+    padding: 0 3rem 1.5rem 3rem;
     background-color: $news-background-color;
     h1{
       color: $news-color;
@@ -380,7 +393,12 @@
 .service-brands{
   display: flex;
   .service-brand{
+    height: 6rem;
     padding: 1rem;
+    img{
+      max-height: 100%;
+      max-width: 100%;
+    }
   }
 }
 

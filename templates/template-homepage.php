@@ -15,7 +15,7 @@ get_header('home'); ?>
   	$bg = (!empty( $featured_img ) ? "background-image: url('". $featured_img[0] ."');" : '');
 ?>
 
-<div class="hero" style="<?php echo $bg; ?>">
+<div class="hero" data-stellar-background-ratio="0.5" style="<?php echo $bg; ?>">
 	<div class="hero-inner">
     <div class="hero-logo">
     	<?php if(get_field('hero_image')) {
@@ -112,7 +112,7 @@ get_header('home'); ?>
     
 <div class="wrap brand-section">
   <div class="brand-statement">
-    <div class="red-header"><h1>Our Brands</h1></div>
+    <a href="/our-brands"><div class="red-header"><h1>Our Brands</h1></div></a>
     <p>The brands of bikes and components we carry are on the shelf for a reason. Purchases are made and products are endorsed because of experience, not profit margin. In other words, we only sell products we believe in. That’s the bottom line.</p>
   </div>
   
@@ -124,6 +124,8 @@ get_header('home'); ?>
 $args = array (
 	'post_type'              => array( 'post_type_brand' ),
 	'post_status'            => array( 'publish' ),
+	'category_name'          => 'featured',
+	'nopaging'               => true,
 );
 
 // The Query
@@ -135,7 +137,7 @@ if ( $query->have_posts() ) {
 		$query->the_post();
 		$brand_link = (get_field('brand_link')) ? get_field('brand_link') :'#' ;
 		?>
-		<div><a href="<?php echo $brand_link; ?>"><?php echo get_the_post_thumbnail($post_id, 'full'); ?></a></div>
+		<div><a href="<?php echo "/our-brands" ; ?>"><?php echo get_the_post_thumbnail($post_id, 'full'); ?></a></div>
 		<?php
 	}
 } else {

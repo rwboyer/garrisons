@@ -16,6 +16,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<script src="https://use.fontawesome.com/3cbeeb5b36.js"></script>
 
 <?php wp_head(); ?>
 </head>
@@ -49,6 +50,8 @@
 			       wp_nav_menu($menu_defaults);
 			    } 
 	      ?>
+	      <a href="https://www.facebook.com/groups/119874271366141/"><i class="fa fa-facebook-official"></i></a>
+	      <a href="https://www.instagram.com/garrisonscyclery/"><i class="fa fa-instagram"></i></a>
 	    </nav>
 <!--
 	    <div class="navigation-tools">

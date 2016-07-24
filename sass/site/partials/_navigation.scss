@@ -6,7 +6,7 @@ header.navigation {
   $large-screen: em(860) !default;
   $navigation-padding: 1em;
   $navigation-background: black;
-  $navigation-color: transparentize(white, 0.3);
+  $navigation-color: white;
   $navigation-color-hover: $accent-color;
   $navigation-height: 60px;
   $navigation-nav-button-background: $action-color;
@@ -28,7 +28,7 @@ header.navigation {
   top: 0;
   &.home{
     background-color: rgba(0,0,0,0.5);
-    z-index: 2;
+    z-index: 3;
     //position: relative;
   }
 
@@ -54,6 +54,12 @@ header.navigation {
       max-height: $navigation-height;
       padding: 0.8em 0;
     }
+  }
+  
+  .fa{
+    color: $accent-color;
+    font-size: 1.5rem;
+    margin-left: .5rem;
   }
 
   // Mobile view
@@ -129,6 +135,9 @@ header.navigation {
       line-height: $navigation-height;
       text-decoration: none;
       width: auto;
+      &:last-child{
+        padding-right: 0;
+      }
     }
 
     a {

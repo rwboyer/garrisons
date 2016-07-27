@@ -1765,6 +1765,10 @@ h2 {
     margin: 0;
     text-align: center; }
 
+/* line 342, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_posts-and-pages.scss */
+.woocommerce h1, .woocommerce h2, .woocommerce h3 {
+  text-align: left; }
+
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/

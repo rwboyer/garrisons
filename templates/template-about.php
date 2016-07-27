@@ -78,8 +78,15 @@ if ( $query->have_posts() ) {
         <div class="modal-fade-screen">
           <div class="modal-inner">
             <div class="modal-close" for="modal-<?php echo $bio ;?>"></div>
-            <h1><?php echo the_title('', '', false) . ' ,' . $staff_title;;?></h1>
-            <?php the_content() ;?>
+            <h1><?php echo '<span>' . the_title('', '', false) . '</span>' . ', ' . $staff_title;;?></h1>
+            <ul class="modal-items">
+              <li class="modal-content">
+                <?php the_content() ;?>
+              </li>
+              <li class="modal-img">
+                <img src="<?php echo $staff_img[0] ; ?>">
+              </li>
+            </ul>
 <!--
             <p class="modal-intro">Intro text lorem ipsum dolor sit ametm, quas, eaque facilis aliquid cupiditate tempora cumque ipsum accusantium illo modi commodi  minima.</p>
             <p class="modal-content">Body text lorem ipsum dolor ipsum dolor sit sit possimus amet, consectetur adipisicing elit. Itaque, placeat, explicabo, veniam quos aperiam molestias eriam molestias molestiae suscipit ipsum enim quasi sit possimus quod atque nobis voluptas earum odit accusamus quibusdam. Body text lorem ipsum dolor ipsum dolor sit sit possimus amet.</p>

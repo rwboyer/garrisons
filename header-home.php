@@ -50,8 +50,8 @@
 			       wp_nav_menu($menu_defaults);
 			    } 
 	      ?>
-	      <a href="https://www.facebook.com/groups/119874271366141/"><i class="fa fa-facebook-official"></i></a>
-	      <a href="https://www.instagram.com/garrisonscyclery/"><i class="fa fa-instagram"></i></a>
+	      <a target="_blank" href="https://www.facebook.com/groups/119874271366141/"><i class="fa fa-facebook-official"></i></a>
+	      <a target="_blank" href="https://www.instagram.com/garrisonscyclery/"><i class="fa fa-instagram"></i></a>
 	    </nav>
 <!--
 	    <div class="navigation-tools">

@@ -270,6 +270,7 @@ ul.big-blocks{
     @include size(1.5em);
     background: $modal-background;
     cursor: pointer;
+    z-index: 2;
 
     &::after,
     &::before {
@@ -299,14 +300,14 @@ ul.big-blocks{
     margin-top: 0;
     max-height: 95%;
     overflow: auto;
-    padding: $modal-padding / 2;
+    //padding: $modal-padding / 2;
     position: relative;
     transition: opacity 0.25s ease;
     width: 95%;
 
     @include media($medium-screen) {
       max-height: 70%;
-      padding: $modal-padding;
+      //padding: $modal-padding;
       width: 60%;
     }
 
@@ -315,20 +316,31 @@ ul.big-blocks{
     }
 
     h1 {
-      color: $base-font-color;
+      color: $news-color;
+      background-color: $news-background-color;
+      margin: 0;
+      padding: 2rem;
+      font-family: $heading-font-family-light;
+      font-size: modular-scale(2);
       text-align: left;
       text-transform: capitalize;
+      span{
+        text-transform: uppercase;
+      }
     }
 
+/*
     p {
       color: $base-font-color;
       line-height: $base-line-height;
     }
+*/
 
     .modal-intro {
       margin-bottom: 1em;
     }
 
+/*
     .modal-content {
       color: $base-font-color;
 
@@ -336,6 +348,7 @@ ul.big-blocks{
         columns: 2 8em;
       }
     }
+*/
 
     a.cta {
       color: $base-background-color;
@@ -361,6 +374,23 @@ ul.big-blocks{
 
 .modal-open {
   overflow: hidden;
+}
+
+.modal-items{
+  display: flex;
+  .modal-content{
+    flex-basis: 70%;
+    padding: 3rem;
+  }
+  .modal-img{
+    flex-basis: 30%;
+    position: relative;
+    img{
+      top: -100px !important;
+      left: auto !important;
+      transform: none !important;
+    }
+  }
 }
 
 .post-blocks{

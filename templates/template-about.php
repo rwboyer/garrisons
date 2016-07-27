@@ -70,7 +70,7 @@ if ( $query->have_posts() ) {
         <h1><?php the_title('', '', true) ;?></h1>
         <h2><?php echo $staff_title; ?></h2>
           <div class="modal-trigger">
-            <button><label for="modal-<?php echo ++$bio ;?>">Read Bio</label></button>
+            <button><label for="modal-<?php echo ++$bio ;?>">View Bio</label></button>
           </div>
         </label>
       </div>

@@ -289,6 +289,7 @@ h2{
       position: absolute;
       bottom: 0;
       background-color: $garrisons-bright-header;
+      font-family: $heading-font-family-alt-light;
       &:hover{
         background-color: shade($garrisons-bright-header, 20%)
       }

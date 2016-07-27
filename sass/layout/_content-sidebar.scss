@@ -188,20 +188,28 @@ ul.big-blocks{
       text-align: center;
       opacity: 0;
       transition: 0.3s all ease-in-out;
-      h1{
+      h1,h2{
         color: white;
         font-size: modular-scale(0);
         text-transform: uppercase;
+        font-family: $heading-font-family-alt-light;
       }
       h2{
-        color: white;
         font-size: modular-scale(-1);
       }
       button{
         background-color: $news-button-color;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-family: $heading-font-family-alt-light;
+        font-size: modular-scale(0)
       }
       label{
         margin-bottom: 0;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-family: $heading-font-family-alt-light;
+        font-size: modular-scale(0)
       }
     }
   }

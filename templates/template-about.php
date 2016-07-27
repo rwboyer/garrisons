@@ -69,8 +69,9 @@ if ( $query->have_posts() ) {
       <div class="staff">
         <h1><?php the_title('', '', true) ;?></h1>
         <h2><?php echo $staff_title; ?></h2>
-        <label for="modal-<?php echo ++$bio ;?>">
-          <div class="modal-trigger"><button>Read Bio</button></div>
+          <div class="modal-trigger">
+            <button><label for="modal-<?php echo ++$bio ;?>">Read Bio</label></button>
+          </div>
         </label>
       </div>
       <div class="modal">

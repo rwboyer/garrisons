@@ -28,6 +28,9 @@
   .hero-logo img {
     height: 6em;
     margin-bottom: 1em;
+    @media(max-width: $mobile-size){
+      height: 4rem;
+    }
   }
 
   .hero-inner {
@@ -177,6 +180,10 @@
     &:hover{
       background-color: tint($news-color, 30%);
     }
+    @media (max-width: $mobile-size){
+      float: none;
+      text-align: center;
+    }
   }
   h1{
     display: block;
@@ -186,6 +193,9 @@
     font-family: $heading-font-family-alt;
     font-size: 1rem;
     text-align: left;
+    @media (max-width: $mobile-size){
+      float: none;
+    }
     a{
       color: $news-color;
       transition: all linear .3s;
@@ -399,6 +409,12 @@
       max-height: 100%;
       max-width: 100%;
     }
+    @media(max-width: $mobile-size){
+      flex-basis: 50%;
+    }
+  }
+  @media(max-width: $mobile-size){
+    flex-wrap: wrap;
   }
 }
 

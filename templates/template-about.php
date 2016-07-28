@@ -85,7 +85,7 @@ if ( $query->have_posts() ) {
                 <?php the_content() ;?>
               </li>
               <li class="modal-img">
-                <img src="<?php echo $staff_img[0] ; ?>">
+                <img class="modal-bio" src="<?php echo $staff_img[0] ; ?>">
               </li>
             </ul>
 <!--
@@ -105,7 +105,7 @@ if ( $query->have_posts() ) {
     endif;
 	}
 	if($count < 9 && $count > 0) :
-	  for($i = 0; $i < 9 - $count; $i++){ ?>
+	  for($i = 1; $i < 9 - $count; $i++){ ?>
   	  <li class="small-block"></li>
     <?php
 	  }

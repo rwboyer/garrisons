@@ -13,8 +13,8 @@
 			@include padding(null 20px);
 		}
 
-		@include media($tablet) {
-		  @include span-columns(6);
+		@media(max-width: $tablet-size) {
+		  @include span-columns(12);
 		}
 	}
 
@@ -39,8 +39,8 @@
 			@include padding(null 20px);
 		}
 
-		@include media($tablet) {
-		  @include span-columns(6); 
+		@media(max-width: $tablet-size) {
+		  @include span-columns(12); 
 		}
 	}
 }
@@ -174,6 +174,15 @@ ul.big-blocks{
         transform: translateY(-50%);
         //transform: translateX(-50%);
         transform: translate3d(-50%, -50%, 0);
+      }
+      img.modal-bio{
+        top: -100px ;
+        left: auto ;
+        transform: none ;
+        @media (max-width: $mobile-size){
+          top: auto;
+          width: 100%;
+        }
       }
       &:hover{
         .staff{
@@ -386,17 +395,21 @@ ul.big-blocks{
 
 .modal-items{
   display: flex;
+  @media (max-width: $mobile-size){
+    flex-wrap: wrap-reverse;
+  }
   .modal-content{
     flex-basis: 70%;
     padding: 3rem;
+    @media (max-width: $mobile-size){
+      flex-basis: 100%;
+    }
   }
   .modal-img{
     flex-basis: 30%;
     position: relative;
-    img{
-      top: -100px !important;
-      left: auto !important;
-      transform: none !important;
+    @media (max-width: $mobile-size){
+      flex-basis: 100%;
     }
   }
 }
@@ -414,6 +427,10 @@ ul.big-blocks{
         border: none;
         margin-bottom: 1.5rem;
         line-height: $heading-line-height;
+        @media (max-width: $tablet-size){
+          font-size: modular-scale(0);
+          margin-bottom: 1rem;
+        }
       }
     }
     &:nth-child(odd){
@@ -432,6 +449,21 @@ ul.big-blocks{
       }  
       &:nth-child(4n+4){
         background-color: $checker-background;
+      }  
+    }
+    @media (max-width: $mobile-size){
+      flex-basis: 100%;
+      &:nth-child(4n+1){
+        background-color: $checker-background;
+      }
+      &:nth-child(4n+2){
+        background-color: white;
+      }  
+      &:nth-child(4n+3){
+        background-color: $checker-background;
+      }  
+      &:nth-child(4n+4){
+        background-color: white;
       }  
     }
   }

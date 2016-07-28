@@ -53,6 +53,10 @@
 article {
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
+	img{
+  	width: 100%;
+  	height: auto;
+	}
 
 	.entry-content {
 		margin-top: 0;
@@ -243,6 +247,9 @@ h2{
       display: inline;
       z-index: 1;
       padding-right: 1rem;
+    }
+    @media (max-width: $tablet-size){
+      font-size: modular-scale(2);
     }
   }
 }

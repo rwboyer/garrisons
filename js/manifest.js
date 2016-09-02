@@ -7,3 +7,4 @@
 //= include ../js/src/dynamic-height.js
 //= include ../js/src/modal.js
 //= include ../js/src/parallax-init.js
+//= include ../js/src/move-menu.js

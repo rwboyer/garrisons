@@ -1783,3 +1783,8 @@ jQuery(document).ready(function(){
   jQuery('#content').css({ top: jQuery('p.demo_store').outerHeight() });
 });
 
+window.onresize = function(event) {
+  jQuery('header.navigation').css({ top: jQuery('p.demo_store').outerHeight() });
+  jQuery('#content').css({ top: jQuery('p.demo_store').outerHeight() });
+};
+

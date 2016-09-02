@@ -1102,6 +1102,12 @@ ul.big-blocks {
         .post-blocks .post-block:nth-child(4n+4) {
           background-color: white; } }
 
+/* line 472, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/layout/_content-sidebar.scss */
+.woocommerce-demo-store p.demo_store {
+  background-color: #ade7c0;
+  color: #00b550;
+  font-family: "museo_sans900"; }
+
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/

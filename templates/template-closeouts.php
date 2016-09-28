@@ -88,7 +88,7 @@ wp_reset_postdata();
 <div class="wrap">
   <div class="content-home">
     <article>
-      <h1 class="components">Components</h1>
+      <h1 class="components">Parts & Accessories</h1>
     </article>
   </div>
 </div>

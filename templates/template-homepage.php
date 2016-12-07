@@ -71,8 +71,6 @@ get_header('home'); ?>
   <h1>CALL THE PROS AT (302) 384-6827</h1>
 </div>
 
-<?php echo do_shortcode('[instagram-feed showheader=false num=9 cols=3 showbutton=false showfollow=false]') ; ?>
-
 <div id="news" class="wrap">
   <div class="content-home">
     <h2>News & Events</h2>
@@ -250,6 +248,8 @@ wp_reset_postdata();
 ?>
   </ul>
 </div>
+
+<?php echo do_shortcode('[instagram-feed showheader=false num=9 cols=3 showbutton=false showfollow=false]') ; ?>
 
 <div class="map-section">
   <?php echo do_shortcode('[mappress mapid="1" width="100%" height="400" adaptive="true"]'); ?>

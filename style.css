@@ -2099,10 +2099,6 @@ h2 {
 /*--------------------------------------------------------------
 ## Homepage
 --------------------------------------------------------------*/
-/* line 2, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_homepage.scss */
-.page-template-template-homepage .wrap {
-  padding-bottom: 0; }
-
 /* line 7, /Volumes/LaCie2/dev/garrisons/wp/wp-content/themes/garrisons/sass/site/partials/_homepage.scss */
 .hero {
   background-color: #324766;

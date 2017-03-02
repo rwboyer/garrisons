@@ -26,7 +26,7 @@
   }
   
   .hero-logo img {
-    height: 6em;
+    height: 8em;
     margin-bottom: 1em;
     @media(max-width: $mobile-size){
       height: 4rem;
@@ -105,6 +105,7 @@
     text-align: center;
     font-family: $banner-font-family;
     font-weight: 700;
+    font-size: 1.1rem;
   }
 }
 
@@ -191,7 +192,7 @@
     padding: 2rem 1rem 2rem 2rem;
     margin: 0;
     font-family: $heading-font-family-alt;
-    font-size: 1rem;
+    font-size: 1.3rem;
     text-align: left;
     @media (max-width: $mobile-size){
       float: none;

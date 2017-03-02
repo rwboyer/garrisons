@@ -36,7 +36,7 @@
 	  	Mon: CLOSED  /  Tue: 9-6  /  Wed: 9-8  /  Thu: 9-6  /  Fri: 9-8  /  Sat: 9-5  /  Sun: 11-4	
 		</p><!-- .site-info -->
 	  <p class="site-info">
-	  	(302) 384-6827  /  (302) 384-6438 (fax)  /  5801 Kennett Pike, Centreville, DE 19807	
+	  	(302) 384-6827  /  info@garrisonscyclery.com  /  5801 Kennett Pike, Centreville, DE 19807	
 		</p><!-- .site-info -->
 		<div class="copyright">
   		<a href="http://2fish.com"><img src="<?php echo get_template_directory_uri() . '/images/2fish.png' ;?>"></a>

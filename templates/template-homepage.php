@@ -110,7 +110,7 @@ get_header('home'); ?>
     
 <div class="wrap brand-section">
   <div class="brand-statement">
-    <a href="/our-brands"><div class="red-header"><h1>Our Brands</h1></div></a>
+    <a href="/our-brands"><div class="red-header"><h1>We're Proud Of Our Brands</h1></div></a>
     <p>The brands of bikes and components we carry are on the shelf for a reason. Purchases are made and products are endorsed because of experience, not profit margin. In other words, we only sell products we believe in. That’s the bottom line.</p>
   </div>
   
@@ -209,6 +209,12 @@ wp_reset_postdata();
       <li class="service-brand"><img src="<?php bloginfo('template_url'); ?>/images/rockshox-logo.gif"></li>
       <li class="service-brand"><img src="<?php bloginfo('template_url'); ?>/images/fox-logo.jpg"></li>
       <li class="service-brand"><img src="<?php bloginfo('template_url'); ?>/images/shimano-logo.png"></li>
+    </ul>
+    <ul class="service-brands">
+      <li class="service-brand"><img src="<?php bloginfo('template_url'); ?>/images/sram-red-logo.jpg"></li>
+      <li class="service-brand"><img src="<?php bloginfo('template_url'); ?>/images/sram-logo.png"></li>
+      <li class="service-brand"><img src="<?php bloginfo('template_url'); ?>/images/shimano-di2.jpg"></li>
+      <li class="service-brand"><img src="<?php bloginfo('template_url'); ?>/images/campy-logo.jpg"></li>
     </ul>
   </div>
 </div>

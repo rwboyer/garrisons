@@ -40,7 +40,7 @@
 		</p><!-- .site-info -->
 		<div class="copyright">
   		<a href="http://2fish.com"><img src="<?php echo get_template_directory_uri() . '/images/2fish.png' ;?>"></a>
-  		<p>Copyright 2016 Garrison's Cyclery</p>
+  		<p>Copyright <?php echo date("Y"); ?> Garrison's Cyclery</p>
 	</footer>
 
 

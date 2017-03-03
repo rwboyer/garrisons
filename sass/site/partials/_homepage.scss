@@ -4,6 +4,14 @@
   }
 }
 
+.mapp-layout{
+  border: none;
+}
+
+.mapp-map-links{
+  border: none;
+}
+
 .hero {  
   background-color: #324766;
   background-position: center;
@@ -454,6 +462,15 @@
         }
       }
     }
+  }
+}
+
+.ig-section{
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  img{
+    width: 400px;
   }
 }
 

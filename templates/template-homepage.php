@@ -255,6 +255,12 @@ wp_reset_postdata();
   </ul>
 </div>
 
+<div class="ig-section">
+  <a href="https://www.instagram.com/garrisonscyclery/">
+    <img src="<?php bloginfo('template_url'); ?>/images/ig-graphic.png">
+  </a>
+</div>
+
 <?php echo do_shortcode('[instagram-feed showheader=false num=9 cols=3 showbutton=false showfollow=false]') ; ?>
 
 <div class="map-section">

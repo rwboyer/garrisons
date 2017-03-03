@@ -61,7 +61,7 @@ if ( $query->have_posts() ) {
   		    <li class="resource-info">
     		    <h1><?php the_title('', '', true) ;?></h1>
     		    <ul>
-      		    <li><?php the_time( get_option( 'date_format' ) ); ?></li>
+      		    <li>Date Posted: <?php the_time( get_option( 'date_format' ) ); ?></li>
       		    <li>Size: <?php echo($size) ; ?></li>
       		    <li>Quantity Available: <?php echo($quantity) ; ?></li>
       		    <li><?php echo '<strike>' . $orig_price . '</strike>' . ' / '. $close_price ;?></li>
@@ -124,7 +124,7 @@ if ( $query->have_posts() ) {
   		    <li class="resource-info">
     		    <h1><?php the_title('', '', true) ;?></h1>
     		    <ul>
-      		    <li><?php the_time( get_option( 'date_format' ) ); ?></li>
+      		    <li>Date Posted: <?php the_time( get_option( 'date_format' ) ); ?></li>
       		    <li>Size: <?php echo($size) ; ?></li>
       		    <li>Quantity Available: <?php echo($quantity) ; ?></li>
       		    <li><?php echo '<strike>' . $orig_price . '</strike>' . ' / '. $close_price ;?></li>

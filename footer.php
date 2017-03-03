@@ -39,7 +39,7 @@
 	  	(302) 384-6827  /  info@garrisonscyclery.com  /  5801 Kennett Pike, Centreville, DE 19807	
 		</p><!-- .site-info -->
 		<div class="copyright">
-  		<a href="http://2fish.com"><img src="<?php echo get_template_directory_uri() . '/images/2fish.png' ;?>"></a>
+  		<a href="http://2fish.com" target="_blank"><img src="<?php echo get_template_directory_uri() . '/images/2fish-logo.png' ;?>"></a>
   		<p>Copyright <?php echo date("Y"); ?> Garrison's Cyclery</p>
 	</footer>
 

@@ -2095,7 +2095,8 @@ h2 {
   .footer .copyright img {
     display: block;
     margin: auto;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    max-width: 16rem; }
 
 /*--------------------------------------------------------------
 ## Homepage

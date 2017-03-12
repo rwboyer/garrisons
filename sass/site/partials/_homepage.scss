@@ -309,6 +309,7 @@
   //background-position: center center;
   .wrap{
     padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -468,7 +469,7 @@
 .ig-section{
   text-align: center;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: .2rem;
   img{
     width: 400px;
   }

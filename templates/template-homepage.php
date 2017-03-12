@@ -256,7 +256,7 @@ wp_reset_postdata();
 </div>
 
 <div class="ig-section">
-  <a href="https://www.instagram.com/garrisonscyclery/">
+  <a href="https://www.instagram.com/garrisonscyclery/" target="_blank">
     <img src="<?php bloginfo('template_url'); ?>/images/ig-graphic.png">
   </a>
 </div>
